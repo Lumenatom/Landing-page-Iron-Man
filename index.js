@@ -1,16 +1,15 @@
 
-const video = document.getElementById("music");
-video.addEventListener("play", handleFirstPlay(event), false);
+document.getElementById('button').addEventListener('click', function(){
+  var audio = new Audio("./music.mp3");
 
-let hasPlayed = false;
-function handleFirstPlay(event) {
-  if (!hasPlayed) {
-    hasPlayed = true;
-
-    // Remove listener so this only gets called once.
-    const vid = event.target;
-    vid.removeEventListener("play", handleFirstPlay(event));
-
-    // Start whatever you need to do after first playback has started
-  }
+audio.oncanplaythrough = function(){
+audio.play();
 }
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+})
