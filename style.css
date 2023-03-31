@@ -75,6 +75,8 @@ body {
 audio {
   position: absolute;
   opacity: 0;
+  width: 100px;
+  height: 50px;
 }
 
 .wrapper {
