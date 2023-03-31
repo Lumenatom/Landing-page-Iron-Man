@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: 'MARVEL';
+  src: url('./marvel-font/MarvelRegular-Dj83.ttf') format('truetype');
+}
+
+body {
+  overflow: hidden;
+}
+
+audio {
+  position: absolute;
+  opacity: 0;
+}
+
+.wrapper {
+  background-image: url('./bg.svg');
+  width: 100vw;
+  height: 100vh;
+  background-size: 100%;
+  background-position: top;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logoImage {
+  margin-top: 30px;
+}
+
+h5 {
+  font-family: 'M PLUS 1', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 79.5%;
+  text-align: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'MARVEL', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 60%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+span {
+  font-size: 50px;
+  line-height: 130%;
+}
+
+h6 {
+  font-family: 'M PLUS 1', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+  margin: 25px 0 0 0;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: linear 0.3s;
+  position: relative;
+}
+button:hover {
+  scale: 1.1;
+  transition: linear 0.3s;
+}
+
+.play {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+p {
+  font-family: 'M PLUS 1', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 79.5%;
+  text-align: center;
+
+  color: #ffffff;
+}
